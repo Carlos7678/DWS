@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio7</title>
+  </head>
+  <body>
+    <h1>Ejercicio7a.html</h1>
+    <hr> 
+    <h1>Formulario super confidencial</h1>
+    <form id="formulario" action="ejercicio7b.php" method="POST">
+      <label for="fname">Escriba su nombre:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+
+      Sexo:<input
+        type="radio"
+        id="sumar"
+        name="operacion"
+        value="hombre"
+        checked
+      />
+      Hombre
+      <input type="radio" id="restar" name="operacion" value="mujer" />
+      Mujer<br /><br />
+
+      <label for="edad">Edad:</label>
+      <select name="edad" id="edad">
+        <option value="sin especificar">Sin especificar</option>
+        <option value="0-18">0-18</option>
+        <option value="19-40">19-40</option>
+        <option value="40-80">40-80</option>
+        <option value="+80">+80</option></select
+      ><br /><br />
+
+      <label for="peso">Peso(kg)</label>
+      <input
+        type="number"
+        id="peso"
+        name="peso"
+        min="0"
+        max="3000"
+      /><br /><br />
+
+      Estado civil:<input
+        type="radio"
+        id="soltero"
+        name="EstadoCivil"
+        value="Soltero/a"
+      />
+      Soltero
+      <input type="radio" id="casado" name="EstadoCivil" value="Casado/a" />
+      Casado
+      <input type="radio" id="otro" name="EstadoCivil" value="Otro" /> Otro
+      <br /><br />
+
+      Aficiones:<br/>
+      <input type="checkbox" id="aficion1" name="aficion1" value="Cine" />
+      <label for="aficion1"> Cine</label><br />
+      <input type="checkbox" id="aficion2" name="aficion2" value="Literatura" />
+      <label for="aficion2"> Literatura</label><br />
+      <input type="checkbox" id="aficion3" name="aficion3" value="Tebeos" />
+      <label for="aficion3"> Tebeos</label><br />
+      <input type="checkbox" id="aficion4" name="aficion4" value="Cine" />
+      <label for="aficion4"> Deporte</label><br />
+      <input type="checkbox" id="aficion5" name="aficion5" value="Literatura" />
+      <label for="aficion5"> Música</label><br />
+      <input type="checkbox" id="aficion6" name="aficion6" value="Tebeos" />
+      <label for="aficion6"> Televisión</label><br /><br />
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+    </form>
+  </body>
+</html>

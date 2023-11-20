@@ -17,7 +17,7 @@
         <input type="text" id="num2" name="num2" required><br>
 
         <label>Operación:
-            <input type="radio" id="sumar" name="operacion" value="sumar" checked> +
+            <input type="radio" id="sumar" name="operacion" val checked> +
             <input type="radio" id="restar" name="operacion" value="restar"> -
             <input type="radio" id="multiplicar" name="operacion" value="multiplicar"> *
             <input type="radio" id="dividir" name="operacion" value="dividir"> /

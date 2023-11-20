@@ -1,0 +1,35 @@
+body {
+    background-image: url(https://r4.wallpaperflare.com/wallpaper/494/255/673/windows-10-errors-windows-errors-humor-emoji-hd-wallpaper-29d0f89da19a8d8b46d7f85fb0e1e60d.jpg);
+    background-size: cover;
+    background-position: center; 
+    font-family: 'Arial', sans-serif;
+    color: #495057;
+    text-align: center;
+    margin: 100px auto;
+    max-width: 600px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div {
+    background-color: white;
+    padding: 20px; 
+}
+
+h1 {
+    color: #d9534f;
+    margin-top: 0; 
+    margin-bottom: 10px; 
+}
+
+p {
+    margin-bottom: 10px; 
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    display: block; 
+    margin-bottom: 10px; 
+}
