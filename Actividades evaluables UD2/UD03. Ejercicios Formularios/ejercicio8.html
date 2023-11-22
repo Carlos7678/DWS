@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio8</title>
+  </head>
+  <body>
+    <h1>Validar contenido</h1>
+    <form id="formulario" action="ejercicio8.php" method="POST">
+      <label for="fname">Escriba un texto a validar:</label>
+      <input type="text" id="textoValidar" name="textoValidar" /><br /><br />
+      Escoger validación:
+      <input type="radio" id="E-mail" name="Validacion" value="E-mail" />
+      E-mail
+      <input type="radio" id="DNI" name="Validacion" value="DNI" /> DNI
+      <input type="radio" id="Números" name="Validacion" value="Números" />
+      Números
+      <br><br>
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Borrar" />
+    </form>
+  </body>
+</html>
