@@ -101,7 +101,7 @@
   
   .buttons-container {
     display: flex;
-    justify-content: space-around; /* Espaciado uniforme entre los botones */
+    justify-content: space-around; 
     margin-top: 20px;
   }
 
@@ -120,7 +120,7 @@
     transition: background-color 0.3s ease;
   }
 
-  /* Estilo para el hover de los botones/enlaces */
+
   .ver-hoteles-button:hover,
   .anadir-hoteles-button:hover {
     background-color: #a77c63;

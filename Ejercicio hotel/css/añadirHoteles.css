@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
   font-family: "Arial", sans-serif;
   background-color: #f6f1eb;
@@ -23,7 +23,7 @@ body {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
 }
 
-/* Estilos del formulario */
+
 form {
   width: 50%;
   margin-top: 20px;
@@ -57,14 +57,14 @@ button:hover {
   background-color: #a77c63;
 }
 
-/* Estilos de los enlaces */
+
 .enlaces-container {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-/* Ajuste de margen entre botones */
+
 .ver-hoteles-link {
   margin-right: 10px;
 }
@@ -86,4 +86,8 @@ button:hover {
 .ver-hoteles-link:hover,
 .volver-inicio:hover {
   background-color: #a77c63;
+}
+
+.button-space {
+  margin-left: 100px; 
 }
