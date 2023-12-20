@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/añadirHoteles.css">
+    <title>Añadir Hotel</title>
+    <script>
+
+        function showSuccessMessage() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var successParam = urlParams.get('success');
+            
+            if (successParam === 'true') {
+
+                var successMessage = document.createElement('p');
+                successMessage.textContent = 'Hotel añadido correctamente';
+                successMessage.classList.add('mensaje-exito');
+                
+
+                var form = document.getElementsByTagName('form')[0];
+                form.parentNode.insertBefore(successMessage, form.nextSibling);
+            }
+        }
+
+
+        function updateSuccessMessage() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var successParam = urlParams.get('success');
+            var mensajeExitoContainer = document.getElementById('mensajeExitoContainer');
+
+            if (successParam === 'true') {
+                mensajeExitoContainer.innerHTML = '<p class="mensaje-exito">Hotel añadido correctamente</p>';
+            }
+        }
+
+
+        window.onload = function() {
+            showSuccessMessage();
+            updateSuccessMessage();
+        };
+    </script>
+</head>
+<body>
+    <h1 class="titulo">Añadir Hoteles en HOTELAND.COM</h1>
+
+    <form action="addHotel.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="estrellas">Estrellas:</label>
+        <input type="number" id="estrellas" name="estrellas" min="0" max="5" required>
+
+        <label for="habitaciones">Habitaciones:</label>
+        <input type="number" id="habitaciones" name="habitaciones" min="0" required>
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <button type="submit">Añadir Hotel</button>
+    </form>
+
+<br><br>
+    <div id="mensajeExitoContainer" class="enlaces-container">
+        <a href="index.html" class="volver-inicio">Volver al Inicio</a>
+        <span class="button-space"></span> 
+        <a href="verHoteles.php" class="ver-hoteles-link">Ver Hoteles</a>
+        <span class="button-space"></span> 
+        <a href="restaurarBD.php" class="restaurar-bd-button">Restaurar BD</a>
+        <span class="button-space"></span> 
+        <a href="borrarHoteles.html" class="borrar-hoteles-button">Borrar Hoteles</a>
+        <span class="button-space"></span> 
+        <a href="modificarHoteles.html" class="modificar-hoteles-button">Modificar Hoteles</a>
+    </div>
+
+    <script>
+
+        function updateSuccessMessage() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var successParam = urlParams.get('success');
+            var mensajeExitoContainer = document.getElementById('mensajeExitoContainer');
+
+            if (successParam === 'true') {
+                mensajeExitoContainer.innerHTML = '<p class="mensaje-exito">Hotel añadido correctamente</p>';
+            }
+        }
+
+
+        window.onload = function() {
+            showSuccessMessage();
+            updateSuccessMessage();
+        };
+    </script>
+</body>
+</html>
