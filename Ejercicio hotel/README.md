@@ -5,7 +5,7 @@
 ## Contenido
 
 - Inicio `index.html`
-- Añadir Hoteles `añadirHoteles.html`
+- Añadir Hoteles `añadirHoteles.php`
 - Ver Hoteles `verHoteles.php`
 - Estilos Página de Inicio `index.css`
 - Estilos Página de Añadir Hoteles `añadirHoteles.css`
@@ -31,7 +31,7 @@ La página principal te da la bienvenida con un diseño intuitivo. Puedes explor
 
 Este archivo CSS proporciona estilos específicos para la página de inicio.
 
-### 2. Añadir Hoteles `añadirHoteles.html`
+### 2. Añadir Hoteles `añadirHoteles.php`
 
 En esta página, puedes ingresar las características del hotel que deseas añadir. Al hacer clic en el botón "Añadir Hotel", la información se guardará en un fichero CSV llamado `hoteles.csv`.
 
@@ -57,7 +57,7 @@ Esta página muestra la lista completa de hoteles almacenados en el fichero CSV 
 
 - **Botones:**
   - Volver al Inicio `index.html`: Regresa a la página principal.
-  - Añadir Hoteles `añadirHoteles.html`: Dirígete a la página para agregar nuevos hoteles.
+  - Añadir Hoteles `añadirHoteles.php`: Dirígete a la página para agregar nuevos hoteles.
 
 #### Archivo CSS: `verHoteles.css`
 

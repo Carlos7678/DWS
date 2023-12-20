@@ -39,6 +39,6 @@
     <div class="enlaces-container">
       <a href="index.html" class="volver-inicio">Volver al Inicio</a>
 
-      <a href="añadirHoteles.html" class="anadir-hoteles-link">Añadir Hoteles</a>
+      <a href="añadirHoteles.php" class="anadir-hoteles-link">Añadir Hoteles</a>
 </body>
 </html>
