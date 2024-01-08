@@ -23,4 +23,4 @@ INSERT INTO hoteles (Nombre, Estrellas, Habitaciones, Poblacion, Direccion) VALU
 ('Hotel Burj Al Arab', 7, 202, 'Dubai, Emiratos Árabes Unidos', 'Umm Suqeim 3'),
 ('Four Seasons Hotel George-V', 5, 244, 'Paris, Francia', '31 Av. George V'),
 ('Hotel Chicote', 4, 456, 'Rio de Janeiro, Brasil', 'Gran Via'),
-('Hotel Rey Vincius jr II', 5, 500, 'Rio de Janeiro, Brasil', '5600, Avenida Pele VI');
+('Hotel Rey Vinicius jr II', 5, 500, 'Rio de Janeiro, Brasil', '5600, Avenida Pele VI');

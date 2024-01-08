@@ -32,7 +32,7 @@ $sql = "
     ('Hotel Burj Al Arab', 7, 202, 'Dubai, Emiratos Árabes Unidos', 'Umm Suqeim 3'),
     ('Four Seasons Hotel George-V', 5, 244, 'Paris, Francia', '31 Av. George V'),
     ('Hotel Chicote', 4, 456, 'Rio de Janeiro, Brasil', 'Gran Via'),
-    ('Hotel Rey Vincius jr II', 5, 500, 'Rio de Janeiro, Brasil', '5600, Avenida Pele VI');
+    ('Hotel Rey Vinicius jr II', 5, 500, 'Rio de Janeiro, Brasil', '5600, Avenida Pele VI');
 ";
 
 // Ejecutar script
@@ -45,3 +45,24 @@ if ($conn->multi_query($sql) === TRUE) {
 // Cerrar conexión
 $conn->close();
 ?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurar base de datos</title>
+    <link rel="stylesheet" href="css/verHoteles.css" />
+</head>
+
+<body>
+    <?php ?>
+    <h1 class="titulo">HOTELAND.COM</h1>
+    <br><br><br><br>
+    <div class="enlaces-container">
+    <a href="index.html" class="volver-inicio">Volver al Inicio</a>
+</div>
+    <br><br>
+</body>
+
+</html>

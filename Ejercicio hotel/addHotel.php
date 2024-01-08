@@ -26,18 +26,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             fputcsv($file, $nuevoHotel);
             fclose($file);
 
-            header("Location: añadirHoteles.html");
+            header("Location: añadirHoteles.php");
             exit;
         } else {
-            header("Location: añadirHoteles.html?error=file_open_error");
+            header("Location: añadirHoteles.php?error=file_open_error");
             exit;
         }
     } else {
-        header("Location: añadirHoteles.html?error=hotel_existente");
+        header("Location: añadirHoteles.php?error=hotel_existente");
         exit;
     }
 } else {
 
-    header("Location: añadirHoteles.html");
+    header("Location: añadirHoteles.php");
     exit;
 }
