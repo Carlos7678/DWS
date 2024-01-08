@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida con Cookie</title>
+    <script>
+        function setCookie(nombre, valor, dias) {
+            var fecha = new Date();
+            fecha.setTime(fecha.getTime() + (dias * 24 * 60 * 60 * 1000));
+            var expira = "expires=" + fecha.toUTCString();
+            document.cookie = nombre + "=" + valor + ";" + expira + ";path=/";
+        }
+
+        function getCookie(nombre) {
+            var nombreCookie = nombre + "=";
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                while (cookie.charAt(0) == ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(nombreCookie) == 0) {
+                    return cookie.substring(nombreCookie.length, cookie.length);
+                }
+            }
+            return "";
+        }
+
+        function mostrarBienvenida() {
+            var nombre = getCookie("nombreVisitante");
+            if (nombre != "") {
+                alert("¡Hola, " + nombre + "!");
+            }
+        }
+
+        function enviarFormulario() {
+            var nombre = document.getElementById("nombre").value;
+            if (nombre.trim() != "") {
+                setCookie("nombreVisitante", nombre, 7); 
+                mostrarBienvenida();
+            } else {
+                alert("Por favor, introduce tu nombre antes de enviar el formulario.");
+            }
+        }
+    </script>
+</head>
+<body onload="mostrarBienvenida();">
+    <h1>Bienvenido al Sitio</h1>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <button type="button" onclick="enviarFormulario()">Enviar</button>
+    </form>
+</body>
+</html>
