@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+div{
+    height: 100%;
+}
+
+button {
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
