@@ -14,6 +14,8 @@ CREATE TABLE hoteles (
     UNIQUE (id)
 );
 
+
+
 -- Insertar datos de ejemplo
 INSERT INTO hoteles (Nombre, Estrellas, Habitaciones, Poblacion, Direccion) VALUES
 ('Bellagio Las Vegas', 5, 3933, 'Las Vegas, Nevada 89109', '3600 Las Vegas Boulevard South'),
