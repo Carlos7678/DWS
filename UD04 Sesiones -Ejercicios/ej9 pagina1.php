@@ -17,4 +17,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Nombre de usuario o contraseña incorrectos. Inténtelo de nuevo.";
     }
 }
-?>
+
